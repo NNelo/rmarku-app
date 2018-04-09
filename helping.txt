@@ -1,0 +1,34 @@
+sails new rmarku-app
+> sails lift
+npm install
+
+git push (...)
+
+
+npm test
+npm install pre-commit --save-dev
+
+>>> },
+>>> "pre-commit" : "test",
+>>> "scripts": ....
+
+
+heroku (create new)
+connect to github
+enable automatic deploys
+manual deploy > deploy branch
+
+
+npm start
+
+config/env/production.js
+	sockets: (...)
+	onlyAllowOrigins:
+		rmarku-app.herokuapp.com
+
+commit and push
+
+(ahora anda la pagina desde el url)
+
+
+
