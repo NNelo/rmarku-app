@@ -1,25 +1,47 @@
 <% var i = 0; %>
 <h1> <%= view.pathFromApp %> </h1>
 
-<ul>
-  <% for (i = 0; i < 5; i++){ %>
-  <li>el valor es <%= i %></li>
-  <% } %>
-</ul>
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="images/logo-png.jpg" width="30" height="30" alt="">
+  </a>
+</nav>
+
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-10 col-4">
-      One of three columns
+    <div class="col-2">
+      <div class="btn-group-vertical mr-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-secondary"><i class="fab fa-android"></i>Personas</button>
+        <button type="button" class="btn btn-secondary">Cursos</button>
+        <button type="button" class="btn btn-secondary">Bautismos</button>
+        <button type="button" class="btn btn-secondary">4</button>
+      </div>
     </div>
-    <div class="col-sm-1 col-4">
-      One of three columns
-    </div>
-    <div class="col-sm-1 col-4">
-      One of three columns
+    <div class="col-10">
+      <ul>
+        <% for (i = 0; i < 5; i++){ %>
+        <li>el valor es <%= i %></li>
+        <% } %>
+      </ul>
     </div>
   </div>
 </div>
+
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-sm-10 col-4">-->
+<!--One of three columns-->
+<!--</div>-->
+<!--<div class="col-sm-1 col-4">-->
+<!--One of three columns-->
+<!--</div>-->
+<!--<div class="col-sm-1 col-4">-->
+<!--One of three columns-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
 <!--template por defecto-->
 <!--<div id="homepage" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>-->
