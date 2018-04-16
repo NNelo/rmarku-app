@@ -37,8 +37,12 @@ commit and push
 travis-ci
 autorizar repositorio
 
-crear archivo en webstorm: travis.yml
+crear archivo en webstorm: .travis.yml
 	language: node_js
 	node_js: 8
+(ver documentación de sintax travil.yml en docs.travis-ci.com/)
 
 
+git commit'n'push
+
+heroku: wait for CI to pass before deploy

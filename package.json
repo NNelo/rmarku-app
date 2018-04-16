@@ -23,7 +23,7 @@
     "pre-commit": "^1.2.2",
     "sails-hook-grunt": "^3.0.2"
   },
-  "pre-commit" : "test", 
+  "pre-commit": "test",
   "scripts": {
     "start": "NODE_ENV=production node app.js",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
