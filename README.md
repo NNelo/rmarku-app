@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/NNelo/rmarku-app.svg?branch=master)](https://travis-ci.org/NNelo/rmarku-app)
+
 # rmarku-app
 
 a [Sails v1](https://sailsjs.com) application
