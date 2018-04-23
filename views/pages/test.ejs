@@ -1,0 +1,28 @@
+hola desde test
+
+<h1>ALUMNOS</h1>
+
+<table id="alumno" class="table striped-  " style="width: 50%; margin: auto">
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for(var i = 0;i < a.length; i++){ %>
+  <tr>
+    <td><%= a[i].nombre %></td>
+    <td><%= a[i].apellido %></td>
+    <td><a href="/Alumno/<%= a[i].id %>">
+        <button class="btn-info btn">
+          <i class="fas fa-eye"></i>
+        </button>
+      </a>
+    </td>
+  </tr>
+  <% } %>
+  </tbody>
+</table>
+
+

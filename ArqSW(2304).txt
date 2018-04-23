@@ -1,0 +1,31 @@
+>nc www.google.com 80
+>get / HTTP/1.1
+
+/config/routes.js 	add 		'/test/' : { view: 'pages/test' },
+/views/pages		create		test.ejs
+
+/rmarku-app/ >sails generate api Alumno	
+
+*PROBLEMA 404 api (policie issue)
+*config/blueprints.js	change		rest: true
+*api/policies/is-logged-in.js		//if (req.me)
+*config/security.js			csrf : false
+
+/api/models/Alumno.js 	add		attributes: {  nombre: {type: 'string', required: 'true'}, }	
+
+open 	http://localhost:1337/Alumno/
+
+WebStorm REST Client, response
+
+
+
+/config/routes.js 	add 		'GET /listaAlumno': 'AlumnoController.list'
+
+
+/api\controllers\AlumnoController.js	
+		module.exports = {
+  			list: function (req, res) {
+    				res.send("hola desde list AlumoController" + cont++);
+  			}	
+
+views/pages/test.ejs			<%= cont %> 	ip:	
