@@ -11,10 +11,16 @@
 module.exports.routes = {
 
   '/test/' : {
-    view: 'pages/test'
+    // view: 'pages/test',
+    view: 'pages/newAlumno',
   },
 
-  'GET /listaAlumno/': 'AlumnoController.list',
+  'GET /addAlumno': {
+    view: 'pages/newAlumno'
+  },
+  'POST /addAlumno': 'AlumnoController.add',
+  'GET /listaAlumno': 'AlumnoController.list',
+  'GET /buscarAlumno': 'AlumnoController.buscar',
 
   //  ╦ ╦╔═╗╔╗ ╔═╗╔═╗╔═╗╔═╗╔═╗
   //  ║║║║╣ ╠╩╗╠═╝╠═╣║ ╦║╣ ╚═╗

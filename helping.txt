@@ -10,7 +10,7 @@ npm install pre-commit --save-dev
 
 >>> },
 >>> "pre-commit" : "test",
->>> "scripts": ....	
+>>> "scripts": ....
 
 
 heroku (create new)
@@ -40,9 +40,20 @@ autorizar repositorio
 crear archivo en webstorm: .travis.yml
 	language: node_js
 	node_js: 8
-(ver documentación de sintax travil.yml en docs.travis-ci.com/)
+(ver documentaciï¿½n de sintax travil.yml en docs.travis-ci.com/)
 
 
 git commit'n'push
 
 heroku: wait for CI to pass before deploy
+
+
+07/05
+
+views/pages create newAlumno.ejs
+config/routes.js view: 'pages/newAlumo',
+
+  'POST /addAlumno': 'AlumnoController.add'
+
+api/controllers/AlumnoControler.js
+    add: async function(req, res)
